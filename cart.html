@@ -441,11 +441,11 @@
                         <span class="text-danger">LE 4,900.00</span>
                         <br>
                         <span class="text-decoration-line-through text-muted">LE 5,400.00</span>
-                        <div class="d-block d-md-none mt-2" style="width: 50%;">
+                        <div class="d-block d-md-none mt-2" >
                           <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center">
-                            <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
-                            <input type="number" disabled id="quantity" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
-                            <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                            <span class="px-2 cursor-pointer" onclick="incrementValue('quantity1')"><i class="fa fa-plus"></i></span>
+                            <input type="number" disabled id="quantity1" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                            <span class="px-2 cursor-pointer" onclick="decrementValue('quantity1')"><i class="fa fa-minus"></i></span>
                           </div>
                         </div>
                       </div>
@@ -453,9 +453,9 @@
                   </td>
                   <td class="tr-none">
                     <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center" style="width: 50%;">
-                      <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
+                      <span class="px-2 cursor-pointer" onclick="incrementValue('quantity2')"><i class="fa fa-plus"></i></span>
                       <input type="number" disabled id="quantity2" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
-                      <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                      <span class="px-2 cursor-pointer" onclick="decrementValue('quantity2')"><i class="fa fa-minus"></i></span>
                     </div>
                   </td>
                   <td>LE 14,700.00</td>
@@ -470,11 +470,11 @@
                         <span class="text-danger">LE 4,900.00</span>
                         <br>
                         <span class="text-decoration-line-through text-muted">LE 5,400.00</span>
-                        <div class="d-block d-md-none mt-2" style="width: 50%;">
+                        <div class="d-block d-md-none mt-2" >
                           <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center">
-                            <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
-                            <input type="number" disabled id="quantity" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
-                            <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                            <span class="px-2 cursor-pointer" onclick="incrementValue('quantity3')"><i class="fa fa-plus"></i></span>
+                            <input type="number" disabled id="quantity3" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                            <span class="px-2 cursor-pointer" onclick="decrementValue('quantity3')"><i class="fa fa-minus"></i></span>
                           </div>
                         </div>
                       </div>
@@ -482,15 +482,16 @@
                   </td>
                   <td class="tr-none">
                     <div class="custem-input border p-2 bg-white rounded-3 d-flex justify-content-between align-items-center" style="width: 50%;">
-                      <span id="increment" class="px-2 cursor-pointer" onclick="incrementValue()"><i class="fa fa-plus"></i></span>
-                      <input type="number" disabled id="quantity2" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
-                      <span id="decrement" class="px-2 cursor-pointer" onclick="decrementValue()"><i class="fa fa-minus"></i></span>
+                      <span class="px-2 cursor-pointer" onclick="incrementValue('quantity4')"><i class="fa fa-plus"></i></span>
+                      <input type="number" disabled id="quantity4" class="w-25 text-center border-0 bg-light" step="1" min="1" value="1">
+                      <span class="px-2 cursor-pointer" onclick="decrementValue('quantity4')"><i class="fa fa-minus"></i></span>
                     </div>
                   </td>
                   <td>LE 14,700.00</td>
                 </tr>
               </tbody>
             </table>
+            
           </div>
           <div class="col-12 col-md-4 mt-4 mt-md-0">
               <div class="bg-light p-4 rounded-3 shadow-sm">
