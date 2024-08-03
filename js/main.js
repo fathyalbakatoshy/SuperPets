@@ -97,23 +97,6 @@ function openDetails() {
   window.location.href = '/shop-details.html';
 }
 
-// function incrementValue() {
-//   let quantity = document.getElementById('quantity');
-//   if (quantity) {
-//     let currentValue = parseInt(quantity.value);
-//     quantity.value = currentValue + 1;
-//   }
-// }
-
-// function decrementValue() {
-//   let quantity = document.getElementById('quantity');
-//   if (quantity) {
-//     let currentValue = parseInt(quantity.value);
-//     if (currentValue > 1) {
-//       quantity.value = currentValue - 1;
-//     }
-//   }
-// }
 
 new WOW().init();
 
@@ -247,22 +230,26 @@ $(document).ready(function(){
 
 
 // Function to increment quantity
-function incrementValue() {
-  var value = parseInt(document.getElementById('quantity2').value, 10);
+// Function to increment value
+function incrementValue(inputId) {
+  var input = document.getElementById(inputId);
+  var value = parseInt(input.value, 10);
   value = isNaN(value) ? 1 : value;
   value++;
-  document.getElementById('quantity2').value = value;
+  input.value = value;
 }
 
-// Function to decrement quantity2
-function decrementValue() {
-  var value = parseInt(document.getElementById('quantity2').value, 10);
+// Function to decrement value
+function decrementValue(inputId) {
+  var input = document.getElementById(inputId);
+  var value = parseInt(input.value, 10);
   value = isNaN(value) ? 1 : value;
   if (value > 1) {
     value--;
-    document.getElementById('quantity2').value = value;
+    input.value = value;
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var images = [];
